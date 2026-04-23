@@ -34,7 +34,7 @@ export function TrackingDistribution() {
               <LabelList
                 dataKey="value"
                 position="right"
-                formatter={(v: number) => `${v.toFixed(1)}%`}
+                formatter={(v) => (typeof v === "number" ? `${v.toFixed(1)}%` : "")}
                 style={{ fill: "#888", fontSize: 11, fontWeight: 600 }}
               />
             </Bar>
